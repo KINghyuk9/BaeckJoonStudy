@@ -12,6 +12,13 @@ public class B1110 {
 
         while (true){
 
+            N = ((N%10)*10) + (((N/10) + (N %10)) %10);
+            count++;
+
+            if(before == N){
+                break;
+            }
         }
+        System.out.println(count);
     }
 }
